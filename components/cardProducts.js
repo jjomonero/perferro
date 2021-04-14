@@ -14,6 +14,9 @@ const useStyles = makeStyles ((theme)=>({
     gridTemplateColumns:'3fr 3fr 3fr',
     gap:'30px ',
     textAlign:'center',
+    [theme.breakpoints.down('sm')]: {
+      gridTemplateColumns:'20fr'
+    },
     
   },
   title:{

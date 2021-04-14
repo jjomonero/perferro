@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
     width:'90%',
     margin:'auto',
     padding:'150px 0',
-    backgroundImage:'url("/images/3.png")',
+    backgroundImage:'url("/images/4.png")',
     background:'fixed no-repeat'
   },
   paper: {
@@ -27,7 +27,10 @@ const useStyles = makeStyles((theme) => ({
       transform:'translateY(30px)',
       transition:'2s all',
       background:'none'
-    }
+    },
+    [theme.breakpoints.down('sm')]: {
+      fontSize:'8px',
+    },
 
     },
     image:{
@@ -35,7 +38,6 @@ const useStyles = makeStyles((theme) => ({
       '&:hover': {
       transition:'2.5s',
         transformOrigin:' center center',
-        cursor:'pointer',
         transform: 'scale(1.5)',
     }
   },

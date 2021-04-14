@@ -164,9 +164,18 @@ export default function Header(props) {
           </div>
 
           <div className={classes.headerIcons}> 
-           <Button color="primary"> <FacebookIcon fontSize="sm" /> </Button> 
-             <Button className={classes.mail}> <MailIcon fontSize="sm" /> </Button>
+           <Link href="https://www.facebook.com/climatizadoresperferro/">
+            <Button color="primary"> <FacebookIcon fontSize="sm" /> </Button> 
+           </Link>
+           
+           <Link href="">
+            <Button className={classes.mail}> <MailIcon fontSize="sm" /> </Button>
+           </Link>
+             
+            <Link href="https://wa.me/5544998154218">
              <Button className={classes.whastapp}> <WhatsAppIcon fontSize="sm" /> </Button>
+            </Link>
+             
           </div>
          
         </Toolbar>
