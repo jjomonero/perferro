@@ -9,8 +9,6 @@ const useStyles = makeStyles((theme) => ({
     width:'90%',
     margin:'auto',
     padding:'150px 0',
-    backgroundImage:'url("/images/4.png")',
-    background:'fixed no-repeat'
   },
   paper: {
     maxWidth:'400px',

@@ -155,7 +155,7 @@ export default function Header(props) {
            </Link>
            
            <Link href="">
-            <Button className={classes.mail}> <MailIcon fontSize="sm" /> </Button>
+            <Button className={classes.mail}> <MailIcon fontSize="xs" /> </Button>
            </Link>
              
             <Link href="https://wa.me/5544998154218">

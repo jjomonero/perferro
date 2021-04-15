@@ -5,12 +5,12 @@ import transitions from '@material-ui/core/styles/transitions';
 const useStyle = makeStyles((theme) => ({
     root:{
         background:'#0070CA',
-        backgroundImage:'url(/images/abstrato.jpeg)',
+        backgroundImage:'url(/images/4.png)',
         textAlign:'center',
         padding:'150px 0',
     },
     paragraph:{
-        color:'#fff',
+        color:'#000',
         fontSize:'1.3em',
         lineHeight:'25px', 
         fontStyle:'italic',
@@ -21,14 +21,15 @@ const useStyle = makeStyles((theme) => ({
 
         color:'#000',
 
-        border:'2px solid #fff',
+        border:'2px solid #000',
         borderRadius:'30px',
         padding:'10px 15px',
         margin:'0 auto 10px',
         '&:hover':{
         transition:'all 0.3s linear',
-        background:'#fff',
-        border: '2px solid #fff',
+        background:'#00b359',
+        border: '2px solid #00b359',
+        color:'#fff'
         }
     }
 }))

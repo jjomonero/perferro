@@ -17,7 +17,7 @@ const tutorialSteps = [
     <h1 style={{marginBottom:"30px", color:"#0058b0"}}>Depo
       <span style={{paddingBottom:'20px', borderBottom:'2px solid #0058b0'}}>ime</span>ntos</h1>  
       <p>
-      <strong style={{fontSize:"20px", fontStyle:"italic"}}> No verão a academia fica ainda mais movimentada e só os ventiladores <br/>
+      <strong style={{fontSize:"20px", fontStyle:"italic", color:'#666'}}> No verão a academia fica ainda mais movimentada e só os ventiladores <br/>
       não resolviam o problema do calor e clima abafado. <br/>
       Com a instalação de um climatizador de médio porte sentimos uma grande diferença <br/>
       e por ser evaporativo da uma sensação de resfrescância ainda maior. </strong> 
@@ -33,7 +33,7 @@ const tutorialSteps = [
       <h1 style={{marginBottom:"30px", color:"#0058b0"}}>Depo
       <span style={{paddingBottom:'20px', borderBottom:'2px solid #0058b0'}}>ime</span>ntos</h1>  
       <p>
-      <strong style={{fontSize:"20px", fontStyle:"italic"}}> 
+      <strong style={{fontSize:"20px", fontStyle:"italic", color:'#666'}}> 
       "Sabendo que hoje em dia manter um ambiente climatizado é uma prioridade para <br/>
       quem quer agradar seus clientes, foi aí que encontramos os Climatizadores Perferro. <br/>
       Com os climatizadores nossa empresa ficou muito mais agradável <br/>
@@ -49,7 +49,7 @@ const tutorialSteps = [
       <h1 style={{marginBottom:"30px", color:"#0058b0"}}>Depo
       <span style={{paddingBottom:'20px', borderBottom:'2px solid #0058b0'}}>ime</span>ntos</h1>  
       <p>
-      <strong style={{fontSize:"20px", fontStyle:"italic"}}> 
+      <strong style={{fontSize:"20px", fontStyle:"italic", color:'#666'}}> 
       "No verão nosso barracão ficava muito quente e percebemos que o rendimento <br/>
       dos funcionários caia pois o desgaste e cansasso é maior. <br/>
       Buscando alguma alternativa para diminuir a temperatura do ambiente encontramos <br/>
@@ -65,7 +65,7 @@ const tutorialSteps = [
       <h1 style={{marginBottom:"30px", color:"#0058b0"}}>Depo
       <span style={{paddingBottom:'20px', borderBottom:'2px solid #0058b0'}}>ime</span>ntos</h1>  
       <p>
-      <strong style={{fontSize:"20px", fontStyle:"italic"}}> 
+      <strong style={{fontSize:"20px", fontStyle:"italic", color:'#666'}}> 
       "Fazia tempo que eu queria climatizar meu supermercado, ouvia os clientes <br/>
       reclamando do calor, mas a opção de ar condicionado era inviável <br/>
       pelo alto custo da energia, foi aí que encontramos os Climatizadores Perferro <br/>
@@ -138,7 +138,7 @@ function Depoimentos () {
     
     return (
       
-      <div style={{ background:"url('/images/3.png')", paddingTop:'85px' }}>
+      <div style={{ background:"url('/images/4.png')", paddingTop:'85px' }}>
           <Paper square elevation={0} className={classes.header}>
           <Typography className={classes.field}>{tutorialSteps[activeStep].text}</Typography>
           </Paper>
