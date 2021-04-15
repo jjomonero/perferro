@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }) {
   return <> <Component {...pageProps} />
 <Header/> 
 <WhatsApp/>
-{/* <DrawerComponents/> */}
+<DrawerComponents/>
   
 </>
 } 
