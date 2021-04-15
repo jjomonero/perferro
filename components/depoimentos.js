@@ -158,7 +158,7 @@ function Depoimentos () {
           ))}
       </AutoPlayDepoimentos>
 
-        <MobileStepper
+        {/* <MobileStepper
         variant="dots"
         steps={maxSteps}
         position="static"
@@ -166,20 +166,20 @@ function Depoimentos () {
         className={classes.root}
         
 
-        // nextButton={
-        //     <Button size="small" onClick={handleNext} disabled={activeStep === 3} className={classes.button}>
-        //     {theme.direction === 'rtl' ?  <KeyboardArrowLeft /> : <KeyboardArrowRight /> }
+        nextButton={
+            <Button size="small" onClick={handleNext} disabled={activeStep === 3} className={classes.button}>
+            {theme.direction === 'rtl' ?  <KeyboardArrowLeft /> : <KeyboardArrowRight /> }
 
-        //     </Button>
-        // }
+            </Button>
+        }
 
-        // backButton={
-        //     <Button  size="small" onClick={handleBack} disabled={activeStep === 0} className={classes.button}>
-        //     {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
-        //     </Button>
-        // }
+        backButton={
+            <Button  size="small" onClick={handleBack} disabled={activeStep === 0} className={classes.button}>
+            {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
+            </Button>
+        }
 
-        />
+        /> */}
 
         </div>
     )

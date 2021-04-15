@@ -14,7 +14,6 @@ import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import MenuIcon from '@material-ui/icons/Menu';
 
 
-
 import Image from 'next/image'
 
 const useStyles = makeStyles((theme) => ({
@@ -93,16 +92,6 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     border: '1px solid #d3d4d5',
   },
-  hamburguer:{
-    width:'30px',
-    display:'none',
-    [theme.breakpoints.down('sm')]: {
-      display:'inherit',
-      position:'relative',
-      zIndex:'900'
-    },
-  }
-  
 }));
 
 export default function Header(props) {
@@ -114,7 +103,7 @@ export default function Header(props) {
         main: '#3f51b5',
       }
     }
-  })
+  }); 
 
   return (
     <ThemeProvider theme={theme}>
@@ -129,9 +118,6 @@ export default function Header(props) {
           
           </Typography>
           
-          <IconButton className={classes.hamburguer}>
-          <MenuIcon />
-          </IconButton>
           <div className={classes.button}>
             <customizedMenu/>
           <Link href="/">
