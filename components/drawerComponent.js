@@ -130,7 +130,7 @@ export default function DrawerComponents() {
 
 
       <List>
-        <Link className={classes.link} href="/fotoPage">
+        <Link className={classes.link} href="/fotosPage">
             <ListItem>
                 <ListItemIcon button className={classes.items}>
                 <PhotoLibraryIcon/>
