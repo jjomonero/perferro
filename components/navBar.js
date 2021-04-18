@@ -48,7 +48,6 @@ const useStyles = makeStyles((theme) => ({
     },
     icon:{
         marginRight: theme.spacing(4),
-        alignItems:'left'
     }
 }));
 
