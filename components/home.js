@@ -22,12 +22,12 @@ import Image from 'next/image'
                 </div>
 
                 <div>
-                    <Button variant="text" color="primary" href="" style={{color:'#fff', fontWeight:'bold'}}>Produtos</Button>
-                    <Button variant="text" color="primary" href="" style={{color:'#fff', fontWeight:'bold'}}>Vantagens</Button>
-                    <Button variant="text" color="primary" href="" style={{color:'#fff', fontWeight:'bold'}}>Fotos</Button>
-                    <Button variant="text" color="primary" href="" style={{color:'#fff', fontWeight:'bold'}}>Quem Somos</Button>
-                    <Button variant="text" color="primary" href="" style={{color:'#fff', fontWeight:'bold'}}>Depoimentos</Button>
-                    <Button variant="text" color="primary" href="" style={{color:'#fff', fontWeight:'bold'}}>Fale Conosco</Button>
+                    <Button variant="text" color="primary" href="/produtos" style={{color:'#fff', fontWeight:'bold'}}>Produtos</Button>
+                    <Button variant="text" color="primary" href="/vantagensPage" style={{color:'#fff', fontWeight:'bold'}}>Vantagens</Button>
+                    <Button variant="text" color="primary" href="/fotosPage" style={{color:'#fff', fontWeight:'bold'}}>Fotos</Button>
+                    <Button variant="text" color="primary" href="/aboutPage" style={{color:'#fff', fontWeight:'bold'}}>Quem Somos</Button>
+                    <Button variant="text" color="primary" href="/depoimentosPage" style={{color:'#fff', fontWeight:'bold'}}>Depoimentos</Button>
+                    <Button variant="text" color="primary" href="/contato" style={{color:'#fff', fontWeight:'bold'}}>Fale Conosco</Button>
                 </div>
             </div>
         </div>
