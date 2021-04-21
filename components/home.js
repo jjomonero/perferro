@@ -21,7 +21,7 @@ import Image from 'next/image'
                     <h1 style={{color:'#00b356', borderTop:'none', background:'#0058b0 ', maxWidth:'20rem', margin:'auto'}}>Perferro</h1>
                 </div>
 
-                <div>
+                <div style={{padding:'20px'}}>
                     <Button variant="text" color="primary" href="/produtos" style={{color:'#fff', fontWeight:'bold'}}>Produtos</Button>
                     <Button variant="text" color="primary" href="/vantagensPage" style={{color:'#fff', fontWeight:'bold'}}>Vantagens</Button>
                     <Button variant="text" color="primary" href="/fotosPage" style={{color:'#fff', fontWeight:'bold'}}>Fotos</Button>
