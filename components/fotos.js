@@ -1,101 +1,156 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import {Grid, Paper, Button} from '@material-ui/core'
+import {Grid, Paper, Typography} from '@material-ui/core'
 import Image from 'next/image'
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    width:'90%',
-    margin:'auto',
-    padding:'150px 0',
-  },
-  paper: {
-    maxWidth:'400px',
-    color: '#fff',
-    background:'#00b359',
-    margin:'auto',  
-    padding: 0,
-    textAlign: 'center',
-    fontWeight:'bolder',
-    borderRadius:'20px',
-    transition:'1.5s',
-    '&:hover':{
-      transition:'2.5s',
-      transform:'translateY(30px)',
-      transition:'2s all',
-      background:'none'
-    },
-    [theme.breakpoints.down('sm')]: {
-      fontSize:'8px',
-    },
-
-    },
-    image:{
-      transition:'2.5s',
-      '&:hover': {
-      transition:'2.5s',
-        transformOrigin:' center center',
-        transform: 'scale(1.5)',
-    }
-  },
-
-}));
-
  function Fotos() {
-  const classes = useStyles();
-
   return (
-    <>
-        <div className={classes.root}>
+    <div>
+        <div style={{
+           flexGrow: 1,
+           width:'86%',
+           margin:'30px auto',
+           padding:'150px 0 50px',
+        }}>
+          <Typography style={{width:'100%'}}>
+               <Typography variant="h1" style={{
+                    fontWeight:'bolder',
+                    fontSize:'38px',
+                    color:'#0058b0',
+                    position:'relative',
+                    margin:' 0 auto 30px',
+                    width:'100%',
+                    textAlign:'center',
+               }}>
+               F<span style={{
+                   paddingBottom:'15px',
+                   borderBottom:'3px solid #0058b0',
+               }}>oto</span>s</Typography>
+            <p style={{
+                     fontWeight: 'lighter',
+                     fontSize:'1em',
+                     margin: '60px 0 20px',
+                     lineHeight:'25px',
+                     color:'#666',
+                     textAlign:'center',
+                     fontFamily:'cursive'
+                }}>
+                Os Climatizadores Perferro podem ser instalados em qualquer ambiente sem a necessidade de
+                adequação ou adaptação,
+                 <br/> por se tratar de um climatizador evaporativo, não há a necessidade do ambiente ser
+                 fechado como o ar condicionado.
+            </p>
+            </Typography>
+
           {/* first Row */}
-          <Grid container spacing={4}>           
-            <Grid item xs={6}>
-              <Paper className={classes.paper}>
-                <Image className={classes.image} src="/images/fotos/igreja.JPG" width="400" height="250"/>
+          <Grid container spacing={12}>
+            <Grid item xs={12} sm={6}>
+              <Paper style={{
+                maxWidth:'400px',
+                color: '#fff',
+                background:'#0058b0',
+                margin:'30px auto',
+                padding: 0,
+                textAlign: 'center',
+                fontWeight:'bolder',
+                borderRadius:'20px',
+                transition:'1.5s',
+              }}>
+                <Image style={{
+                   transition:'2.5s',
+                }} src="/images/fotos/igreja.JPG" width="400" height="250"/>
                 IGREJA
               </Paper>
             </Grid>
 
-            <Grid item xs={6}>
-              <Paper className={classes.paper}>
-                <Image className={classes.image} src="/images/fotos/oficina.JPG" width="400" height="250"/>
+            <Grid item xs={12} sm={6}>
+              <Paper style={{
+                maxWidth:'400px',
+                color: '#fff',
+                background:'#0058b0',
+                margin:'30px auto',
+                padding: 0,
+                textAlign: 'center',
+                fontWeight:'bolder',
+                borderRadius:'20px',
+                transition:'1.5s',
+              }}>
+                <Image  src="/images/fotos/oficina.JPG" width="400" height="250"/>
                 OFICINA
               </Paper>
-            </Grid> 
-          </Grid>    
+            </Grid>
+          </Grid>
 
             {/* second Row */}
 
-          <Grid container spacing={4}>
-            <Grid item xs={6}>
-              <Paper className={classes.paper}>
-                <Image className={classes.image} src="/images/fotos/mecanicaDeCaminhoes.JPG" width="400" height="250"/>
+          <Grid container spacing={12}>
+            <Grid item xs={12} sm={6}>
+              <Paper style={{
+                maxWidth:'400px',
+                color: '#fff',
+                background:'#0058b0',
+                margin:'30px auto',
+                padding: 0,
+                textAlign: 'center',
+                fontWeight:'bolder',
+                borderRadius:'20px',
+                transition:'1.5s',
+              }}>
+                <Image src="/images/fotos/mecanicaDeCaminhoes.JPG" width="400" height="250"/>
                 MECÂNICA DE CAMINHÕES
               </Paper>
             </Grid>
 
-            <Grid item xs={6}>
-              <Paper className={classes.paper}>
-                <Image className={classes.image} src="/images/fotos/padaria.JPG" width="400" height="250"/>
+            <Grid item xs={12} sm={6}>
+              <Paper style={{
+                maxWidth:'400px',
+                color: '#fff',
+                background:'#0058b0',
+                margin:'30px auto',
+                padding: 0,
+                textAlign: 'center',
+                fontWeight:'bolder',
+                borderRadius:'20px',
+                transition:'1.5s',
+              }}>
+                <Image src="/images/fotos/padaria.JPG" width="400" height="250"/>
                 PADARIA
               </Paper>
             </Grid>
-          </Grid> 
+          </Grid>
 
-           {/* thirt Row */}    
+           {/* thirt Row */}
 
-          <Grid container spacing={4}>
-            <Grid item xs={6}>
-              <Paper className={classes.paper}>
-                <Image className={classes.image} src="/images/fotos/industria.JPG" width="400" height="250"/>
+          <Grid container spacing={12}>
+            <Grid item xs={12} sm={6}>
+              <Paper style={{
+                maxWidth:'400px',
+                color: '#fff',
+                background:'#0058b0',
+                margin:'30px auto',
+                padding: 0,
+                textAlign: 'center',
+                fontWeight:'bolder',
+                borderRadius:'20px',
+                transition:'1.5s',
+              }}>
+                <Image src="/images/fotos/industria.JPG" width="400" height="250"/>
                INDÚSTRIA
               </Paper>
             </Grid>
 
-            <Grid item xs={6}>
-              <Paper className={classes.paper}>
-                <Image className={classes.image} src="/images/fotos/lojaDeEquipamentos.JPG" width="400" height="250"/>
+            <Grid item xs={12} sm={6}>
+              <Paper style={{
+                maxWidth:'400px',
+                color: '#fff',
+                background:'#0058b0',
+                margin:'30px auto',
+                padding: 0,
+                textAlign: 'center',
+                fontWeight:'bolder',
+                borderRadius:'20px',
+                transition:'1.5s',
+              }}>
+                <Image src="/images/fotos/lojaDeEquipamentos.JPG" width="400" height="250"/>
                 LOJA DE EQUIPAMENTOS
               </Paper>
             </Grid>
@@ -103,23 +158,43 @@ const useStyles = makeStyles((theme) => ({
 
             {/* fourth row */}
 
-            <Grid container spacing={4}>
-              <Grid item xs={6}>
-                <Paper className={classes.paper}>
-                  <Image className={classes.image} src="/images/fotos/salaoDeBeleza.JPG" width="400" height="250"/>
+            <Grid container spacing={12}>
+              <Grid item xs={12} sm={6}>
+                <Paper style={{
+                  maxWidth:'400px',
+                color: '#fff',
+                background:'#0058b0',
+                margin:'30px auto',
+                padding: 0,
+                textAlign: 'center',
+                fontWeight:'bolder',
+                borderRadius:'20px',
+                transition:'1.5s',
+                }}>
+                  <Image src="/images/fotos/salaoDeBeleza.JPG" width="400" height="250"/>
                   SALÃO DE BELEZA
                 </Paper>
               </Grid>
 
-              <Grid item xs={6}>
-                <Paper className={classes.paper}>
-                  <Image className={classes.image} src="/images/fotos/supermercado.JPG" width="400" height="250"/>
+              <Grid item xs={12} sm={6}>
+                <Paper style={{
+                  maxWidth:'400px',
+                color: '#fff',
+                background:'#0058b0',
+                margin:'30px auto',
+                padding: 0,
+                textAlign: 'center',
+                fontWeight:'bolder',
+                borderRadius:'20px',
+                transition:'1.5s',
+                }}>
+                  <Image src="/images/fotos/supermercado.JPG" width="400" height="250"/>
                   SUPERMERCADO
                 </Paper>
               </Grid>
             </Grid>
         </div>
-    </>
+    </div>
   )
 }
 

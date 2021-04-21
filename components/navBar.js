@@ -1,12 +1,10 @@
 import React from 'react';
 import clsx from 'clsx';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
-import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
@@ -20,39 +18,13 @@ import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 import LocationCityIcon from '@material-ui/icons/LocationCity';
 import FeedbackIcon from '@material-ui/icons/Feedback';
 import ContactsIcon from '@material-ui/icons/Contacts';
-import { Mail } from '@material-ui/icons';
-import { Link } from '@material-ui/core';
+import { Hidden, Link } from '@material-ui/core';
 import Image from 'next/image'
 import FacebookIcon from '@material-ui/icons/Facebook';
 import MailIcon from '@material-ui/icons/Mail';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    top:0,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    margin:'auto'
-  },
-    headerIcons:{
-        [theme.breakpoints.down('sm')]: {
-            display:'none'
-          },
-    },
-    items:{
-        margin:'auto'
-    },
-    icon:{
-        marginRight: theme.spacing(4),
-    }
-}));
-
 export default function NavBar() {
-  const classes = useStyles();
   const [state, setState] = React.useState({
     left: true,
   });
@@ -67,133 +39,108 @@ export default function NavBar() {
 
   const list = (anchor) => (
     <div
-      className={clsx(classes.list, {
-        [classes.fullList]: anchor === 'top' || anchor === 'bottom',
+      className={clsx(list, {
+        [state]: anchor === 'top' || anchor === 'bottom',
       })}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
+      style={{background:'#0038b0'}}
     >
       <List>
-          <Link className={classes.link} href="/">
+          <Link href="/">
             <ListItem >
-                <ListItemIcon className={classes.items} button>
-                    <HomeIcon className={classes.icon}/>     
+                <ListItemIcon style={{margin:'auto',  color:'#00d359', fontWeight:'bolder'}} button>
+                    <HomeIcon style={{marginRight:'2rem', color:'#00e359'}}/>
                     <ListItemText primary={' Página Inicial'} />
                 </ListItemIcon>
             </ListItem>
-          </Link>  
+          </Link>
       </List>
-      <Divider/>
-      <Divider/>
-      <Divider/>
-      <Divider/>
 
       <List>
-        <Link className={classes.link} href="/productsPage" >
+        <Link href="/produtos" >
             <ListItem >
-                <ListItemIcon button className={classes.items}>
-                <ShoppingCartIcon className={classes.icon}/>
+                <ListItemIcon button style={{margin:'auto',  color:'#00d359', fontWeight:'bolder'}}>
+                <ShoppingCartIcon style={{marginRight:'2rem', color:'#00e359'}}/>
                 <ListItemText primary={'Produtos'} />
                 </ListItemIcon>
             </ListItem>
         </Link>
       </List>
-      <Divider/>
-      <Divider/>
-      <Divider/>
-      <Divider/>
 
 
       <List>
-        <Link className={classes.link} href="/vantagensPage">
+        <Link href="/vantagensPage">
             <ListItem >
-                <ListItemIcon button className={classes.items}>
-                <AddToQueueIcon className={classes.icon}/>
+                <ListItemIcon button style={{margin:'auto',  color:'#00d359', fontWeight:'bolder'}}>
+                <AddToQueueIcon style={{marginRight:'2rem', color:'#00e359'}}/>
                 <ListItemText primary={'Vantagens'} />
                 </ListItemIcon>
             </ListItem>
         </Link>
       </List>
-      <Divider/>
-      <Divider/>
-      <Divider/>
-      <Divider/>
 
 
       <List>
-        <Link className={classes.link} href="/fotosPage">
+        <Link href="/fotosPage">
             <ListItem>
-                <ListItemIcon button className={classes.items}>
-                <PhotoLibraryIcon className={classes.icon}/>
+                <ListItemIcon button style={{margin:'auto',  color:'#00d359', fontWeight:'bolder'}}>
+                <PhotoLibraryIcon style={{marginRight:'2rem', color:'#00e359'}}/>
                 <ListItemText primary={'Fotos'} />
                 </ListItemIcon>
             </ListItem>
         </Link>
       </List>
-      <Divider/>
-      <Divider/>
-      <Divider/>
-      <Divider/>
 
 
       <List>
-        <Link className={classes.link} href="/aboutPage">
+        <Link href="/aboutPage">
             <ListItem >
-                <ListItemIcon button className={classes.items}>
-                <LocationCityIcon className={classes.icon}/>
-                <ListItemText primary={'Quem Somos'} />
+                <ListItemIcon button style={{margin:'auto',  color:'#00d359', fontWeight:'bolder'}}>
+                <LocationCityIcon style={{marginRight:'2rem', color:'#00e359'}}/>
+                <ListItemText  primary={'Quem Somos'} />
                 </ListItemIcon>
             </ListItem>
         </Link>
       </List>
-      <Divider/>
-      <Divider/>
-      <Divider/>
-      <Divider/>
-      
+
       <List>
-        <Link className={classes.link} href="/depoimentosPage">
+        <Link href="/depoimentosPage">
             <ListItem >
-                <ListItemIcon button className={classes.items}>
-                <FeedbackIcon className={classes.icon}/>
+                <ListItemIcon button style={{margin:'auto',  color:'#00d359', fontWeight:'bolder'}}>
+                <FeedbackIcon style={{marginRight:'2rem', color:'#00e359'}}/>
                 <ListItemText primary={'Depoimentos'} />
                 </ListItemIcon>
             </ListItem>
         </Link>
       </List>
-      <Divider/>
-      <Divider/>
-      <Divider/>
-      <Divider/>
 
       <List>
-        <Link className={classes.link} href="/contato">
-            <ListItem >
-                <ListItemIcon button className={classes.items}>
-                <ContactsIcon className={classes.icon}/>
+        <Link href="/contato" >
+            <ListItem  >
+                <ListItemIcon button style={{margin:'auto',  color:'#00d359', fontWeight:'bolder'}} >
+                <ContactsIcon style={{marginRight:'2rem', color:'#00e359'}} />
                 <ListItemText primary={'Fale Conosco'} />
                 </ListItemIcon>
             </ListItem>
         </Link>
       </List>
-      <Divider/>
-      <Divider/>
-      <Divider/>
-      <Divider/>
     </div>
   );
 
   return (
-    <div className={classes.root}>
+    <div style={{
+      flexGrow:'1',
+      top:'0',}}>
       <AppBar position="fixed" top="0" color="inherit">
-        <Toolbar>
-        
-    <div className={classes.drawer}>
+        <Toolbar >
+
+    <div >
         {['top'].map((anchor) => (
         <React.Fragment key={anchor}>
           <Button onClick={toggleDrawer(anchor, true)}>
-          <MenuIcon className={classes.menu}/>
+          <MenuIcon />
           </Button>
           <SwipeableDrawer
             anchor={anchor}
@@ -206,31 +153,33 @@ export default function NavBar() {
         </React.Fragment>
       ))}
     </div>
-          <Typography className={classes.title}>
+          <Typography style={{margin:'auto'}}>
           <Link href="/">
-          <Image src="/images/cp.png" alt="logo" width={166} height={80} className={classes.logo}/>
+          <Image src="/images/cp.png" alt="logo" width={166} height={80} />
           </Link>
           </Typography>
 
-          <div > 
+          <Hidden xlUp  smDown>
+          <div >
            <Link href="https://www.facebook.com/climatizadoresperferro/">
-            <Button color="inherit" className={classes.headerIcons}> <FacebookIcon  /> </Button> 
+            <Button color="inherit"> <FacebookIcon  /> </Button>
            </Link>
-           
+
            <Link href="">
-            <Button color="inherit" className={classes.headerIcons}> <MailIcon  /> </Button>
+            <Button color="inherit"> <MailIcon  /> </Button>
            </Link>
-             
+
             <Link href="https://wa.me/5544998154218">
-             <Button color="inherit" className={classes.headerIcons}> <WhatsAppIcon  /> </Button>
+             <Button color="inherit"> <WhatsAppIcon  /> </Button>
             </Link>
-             
           </div>
+          </Hidden>
+
         </Toolbar>
       </AppBar>
 
-      
+
     </div>
-    
+
   );
 }
