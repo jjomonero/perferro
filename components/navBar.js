@@ -126,6 +126,28 @@ export default function NavBar() {
             </ListItem>
         </Link>
       </List>
+
+      <List style={{background:'#fff'}}>
+        <Link>
+            <ListItem  >
+                <ListItemIcon button style={{margin:'auto',  color:'#00d359'}} >
+
+                <Link href="https://www.facebook.com/climatizadoresperferro/">
+                <FacebookIcon style={{margin:'0 40px', color:'#00e359'}} />
+                </Link>
+
+                <Link href="/">
+                <MailIcon style={{margin:'0 40px', color:'#00e359'}} />
+                </Link>
+
+                <Link href="https://wa.me/5544998154218">
+                <WhatsAppIcon style={{margin:'0 40px', color:'#00e359'}} />
+                </Link>
+
+                </ListItemIcon>
+            </ListItem>
+        </Link>
+      </List>
     </div>
   );
 
@@ -140,7 +162,7 @@ export default function NavBar() {
         {['top'].map((anchor) => (
         <React.Fragment key={anchor}>
           <Button onClick={toggleDrawer(anchor, true)}>
-          <MenuIcon />
+          <MenuIcon color="primary" />
           </Button>
           <SwipeableDrawer
             anchor={anchor}
