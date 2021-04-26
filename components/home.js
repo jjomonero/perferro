@@ -69,6 +69,7 @@ function Home() {
                 <div style={{
                     fontSize:'20px',
                     margin:'auto',
+                    fontStyle:'italic'
                     }}>
                     <h2 style={{color:'#0058b0'}}>Climatizadores</h2>
                     <h1 style={{color:'#00b356', borderTop:'none', background:'#0058b0 ', maxWidth:'20rem', margin:'auto'}}>Perferro</h1>

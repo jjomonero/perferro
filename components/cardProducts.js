@@ -102,7 +102,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
               <Divider/>
               <Divider/>
               <Divider/>
-            <Typography variant="body2"> 
+            <Typography variant="overline"> 
               <strong>DETALHES </strong>: <span> Hélice direto no motor, painel digital com 
                 controlador de velocidade e controle remoto</span>
             </Typography> 
@@ -166,7 +166,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
               <Divider/>
               <Divider/>
               <Divider/>
-            <Typography variant="body2"> 
+            <Typography variant="overline"> 
               <strong>DETALHES </strong>: <span> Hélice direto no motor, painel digital com 
                 controlador de velocidade e controle remoto</span>
             </Typography> 
@@ -229,7 +229,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
               <Divider/>
               <Divider/>
               <Divider/>
-            <Typography variant="body2"> 
+            <Typography variant="overline"> 
               <strong>DETALHES </strong>: <span> Hélice direto no motor, painel digital com 
                 controlador de velocidade e controle remoto</span>
             </Typography> 
@@ -293,7 +293,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
               <Divider/>
               <Divider/>
               <Divider/>
-            <Typography variant="body2"> 
+            <Typography variant="overline"> 
               <strong>DETALHES </strong>: <span> Hélice direto no motor, painel digital com 
                 controlador de velocidade e controle remoto</span>
             </Typography> 
@@ -357,7 +357,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
               <Divider/>
               <Divider/>
               <Divider/>
-            <Typography variant="body2"> 
+            <Typography variant="overline"> 
               <strong>DETALHES </strong>: <span> Hélice direto no motor, painel digital com 
                 controlador de velocidade e controle remoto</span>
             </Typography> 
