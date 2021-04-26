@@ -57,7 +57,7 @@ import Image from 'next/image'
               }}>
                 <Image style={{
                    transition:'2.5s',
-                }} src="/images/fotos/igreja.JPG" width="400" height="250"/>
+                }} src="/images/fotos/igreja.JPG" width="400" height="250" alt="igreja"/>
                 IGREJA
               </Paper>
             </Grid>
@@ -74,7 +74,7 @@ import Image from 'next/image'
                 borderRadius:'20px',
                 transition:'1.5s',
               }}>
-                <Image  src="/images/fotos/oficina.JPG" width="400" height="250"/>
+                <Image  src="/images/fotos/oficina.JPG" width="400" height="250" alt="oficina"/>
                 OFICINA
               </Paper>
             </Grid>
@@ -95,7 +95,7 @@ import Image from 'next/image'
                 borderRadius:'20px',
                 transition:'1.5s',
               }}>
-                <Image src="/images/fotos/mecanicaDeCaminhoes.JPG" width="400" height="250"/>
+                <Image src="/images/fotos/mecanicaDeCaminhoes.JPG" width="400" height="250" alt="mecanica"/>
                 MECÂNICA DE CAMINHÕES
               </Paper>
             </Grid>
@@ -112,7 +112,7 @@ import Image from 'next/image'
                 borderRadius:'20px',
                 transition:'1.5s',
               }}>
-                <Image src="/images/fotos/padaria.JPG" width="400" height="250"/>
+                <Image src="/images/fotos/padaria.JPG" width="400" height="250" alt="padaria"/>
                 PADARIA
               </Paper>
             </Grid>
@@ -133,7 +133,7 @@ import Image from 'next/image'
                 borderRadius:'20px',
                 transition:'1.5s',
               }}>
-                <Image src="/images/fotos/industria.JPG" width="400" height="250"/>
+                <Image src="/images/fotos/industria.JPG" width="400" height="250" alt="industria"/>
                INDÚSTRIA
               </Paper>
             </Grid>
@@ -150,7 +150,7 @@ import Image from 'next/image'
                 borderRadius:'20px',
                 transition:'1.5s',
               }}>
-                <Image src="/images/fotos/lojaDeEquipamentos.JPG" width="400" height="250"/>
+                <Image src="/images/fotos/lojaDeEquipamentos.JPG" width="400" height="250" alt="loja"/>
                 LOJA DE EQUIPAMENTOS
               </Paper>
             </Grid>
@@ -171,7 +171,7 @@ import Image from 'next/image'
                 borderRadius:'20px',
                 transition:'1.5s',
                 }}>
-                  <Image src="/images/fotos/salaoDeBeleza.JPG" width="400" height="250"/>
+                  <Image src="/images/fotos/salaoDeBeleza.JPG" width="400" height="250" alt="salão"/>
                   SALÃO DE BELEZA
                 </Paper>
               </Grid>
@@ -188,7 +188,7 @@ import Image from 'next/image'
                 borderRadius:'20px',
                 transition:'1.5s',
                 }}>
-                  <Image src="/images/fotos/supermercado.JPG" width="400" height="250"/>
+                  <Image src="/images/fotos/supermercado.JPG" width="400" height="250" alt="supermercado"/>
                   SUPERMERCADO
                 </Paper>
               </Grid>

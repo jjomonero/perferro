@@ -2,6 +2,10 @@
 import React from 'react'
 import { Card, CardContent, CardHeader, Typography, CardActions, Button, Grid, makeStyles} from '@material-ui/core'
 import Image from 'next/image'
+import Accordion from '@material-ui/core/Accordion';
+import AccordionSummary from '@material-ui/core/AccordionSummary';
+import AccordionDetails from '@material-ui/core/AccordionDetails';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
   const useStyles = makeStyles((theme) =>  ({
     responsive:{
       width:'100%',
@@ -63,15 +67,27 @@ import Image from 'next/image'
           Ideal para grandes ambientes como: Indústrias, supermercados, depósitos e igrejas.
           </Typography>
           <CardActions disableSpacing>
-            <Button variant="contained" style={{
-              width:"40%",
-              color:"#fff",
-              fontWeight:'bolder',
-              textAlign:"center",
-              margin:'auto',
-              borderRadius:'10px',
+            
+
+          <Accordion >
+          <AccordionSummary
+            expandIcon={<Button />}
+            aria-controls="produto-content"
+            id="1400"
+          >
+            <Button id="1400" variant="contained"  size="small" style={{
+              
               backgroundColor: '#00B058',
               borderColor: '1px solid #00B058',}}> Ver Mais</Button>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+              sit amet blandit leo lobortis eget.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        
         </CardActions>
         </Typography>
         </CardContent>
